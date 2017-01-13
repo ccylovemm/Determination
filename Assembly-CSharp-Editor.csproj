@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\BuildAssetBundle.cs" />
+     <Compile Include="Assets\Editor\TextureEditor.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\ActiveAnimationEditor.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\BMFontReader.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\ComponentSelector.cs" />
