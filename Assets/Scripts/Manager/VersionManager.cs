@@ -7,7 +7,7 @@ using System.Text;
 
 //  Created by CaoChunYang 
 
-public class VersionManager : MonoBehaviour
+public class VersionManager : Singleton<VersionManager>
 {
 	static public string VersionFile = "Version.txt";
     static public string Latest_VersionFile = "Latest_Version.txt";
@@ -291,17 +291,4 @@ public class VersionManager : MonoBehaviour
 	}    
 	
 	public delegate void HandleFinishDownload(WWW www);
-
-    static private VersionManager inst_;
-    static public VersionManager Inst
-    {
-        get
-        {
-            if (inst_ == null)
-            {
-                inst_ = new VersionManager();
-            }
-            return inst_;
-        }
-    }
 } 

@@ -28,7 +28,12 @@ public class SocketClient
         }
     }
 
-    void Connect(string host, int port) 
+    static public void Connect()
+    {
+        Instance.Connect(AppConst.ip , AppConst.port);
+    }
+
+    public void Connect(string host, int port) 
     {
         tcpClient = null;
         tcpClient = new TcpClient();

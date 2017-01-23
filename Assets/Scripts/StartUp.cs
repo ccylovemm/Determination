@@ -10,6 +10,12 @@ public class StartUp : MonoBehaviour {
 
     IEnumerator Init()
     {
+        yield return new WaitForEndOfFrame();
+        ResourceManager.Instance.LoadScene("Loading");
+    }
+
+    IEnumerator Init1()
+    {
         yield return new WaitForSeconds(0.1f);
         #if UNITY_EDITOR
                 CheckVersionFinish();

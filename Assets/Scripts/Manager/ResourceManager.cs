@@ -19,7 +19,7 @@ public class ResourceManager : Singleton<ResourceManager>
         return System.IO.File.ReadAllText(VersionManager.GetConfigPath(fileName));
     }
 
-    public void LoadScene(string strName, LoadComplete callBack)
+    public void LoadScene(string strName, LoadComplete callBack = null)
     {
         StartCoroutine(LoadAssets(strName, callBack, true));
     }
@@ -51,12 +51,12 @@ public class ResourceManager : Singleton<ResourceManager>
         if (isScene)
         {
             SceneManager.LoadScene(strName);
-            callBack(null);
+            if (callBack != null) callBack(null);
         }
         else
         {
             GameObject go = assetAB.LoadAsset<GameObject>(strName);
-            callBack(GameObject.Instantiate(go));
+            if (callBack != null) callBack(GameObject.Instantiate(go));
         }
         foreach (var ab in assetBundleList)
         {

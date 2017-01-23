@@ -155,6 +155,8 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\Scripts\ConstDefine\AppConst.cs" />
+     <Compile Include="Assets\Scripts\Core\ClientApp.cs" />
+     <Compile Include="Assets\Scripts\Core\EType.cs" />
      <Compile Include="Assets\Scripts\Core\EventSystem.cs" />
      <Compile Include="Assets\Scripts\Manager\AnimationManager.cs" />
      <Compile Include="Assets\Scripts\Manager\CameraManager.cs" />
@@ -162,10 +164,13 @@
      <Compile Include="Assets\Scripts\Manager\ResourceManager.cs" />
      <Compile Include="Assets\Scripts\Manager\SoundManager.cs" />
      <Compile Include="Assets\Scripts\Manager\VersionManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\WindowKey.cs" />
+     <Compile Include="Assets\Scripts\Manager\WindowManager.cs" />
+     <Compile Include="Assets\Scripts\Network\Buffer.cs" />
      <Compile Include="Assets\Scripts\Network\Packet.cs" />
+     <Compile Include="Assets\Scripts\Network\Protocol.cs" />
      <Compile Include="Assets\Scripts\Network\SocketClient.cs" />
      <Compile Include="Assets\Scripts\Network\SocketRecieve.cs" />
-     <Compile Include="Assets\Scripts\Network\SocketSend.cs" />
      <Compile Include="Assets\Scripts\StartUp.cs" />
      <Compile Include="Assets\Scripts\Util\Singleton.cs" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 1.shader" />
